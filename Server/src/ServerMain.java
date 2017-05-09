@@ -13,8 +13,8 @@ public class ServerMain {
 
         String cmd = "";
         Scanner scanner = new Scanner(System.in);
-        cmd = scanner.toString();
-        while(cmd.equals("q") && cmd.equals("quit")){
+        cmd = scanner.nextLine();
+        while(!cmd.equals("q") && !cmd.equals("quit")){
             scanner = new Scanner(System.in);
             cmd = scanner.toString();
         }
